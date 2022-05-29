@@ -1,0 +1,2001 @@
+{
+  "command": [
+    {
+      "name": "User Joins Server",
+      "perms": [],
+      "actions": [
+        {
+          "name": "welcome",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "933419199949312051",
+          "color": "0903AD",
+          "title": "Willkommen!",
+          "url": "",
+          "authorname": "Technische Abteilung des LSPD",
+          "authorimageurl": "https://i.imgur.com/hfkhaoW.png",
+          "authorlink": "",
+          "description": "<@${tempVars.newuser.id}> ist soeben beigetreten.",
+          "thumbnail": "${tempVars.newuser.user.avatarURL}",
+          "image": "",
+          "footer": "Developed by 𝙹𝚊𝚗#0001",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ],
+      "var": {
+        "user": "newuser"
+      }
+    },
+    {
+      "name": "Any Message",
+      "perms": [],
+      "actions": [
+        {
+          "name": "check message",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "980471490732511292": [
+              {
+                "name": "add role verwarnung",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.anymessage.content}",
+                "rolename": "Verwarnung"
+              },
+              {
+                "name": "dm",
+                "category": "Message",
+                "type": "Send Direct Message",
+                "messageActionRows": [],
+                "user": "${tempVars.anymessage.content}",
+                "messagetext": "Guten Tag,\n\ndies ist eine automatisierte Nachricht des Systems des Los Santos Police Department.\nHiermit werden Sie offiziell darauf hingewiesen, dass Sie eine interne Verwarnung erhalten haben. Melden Sie sich bei Rückfragen bitte an die Human Resource Division.\n\nFreundliche Grüße",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.anymessage.channel.id}"
+        }
+      ],
+      "var": {}
+    },
+    {
+      "name": "User Kicked",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "user": "kickuser"
+      }
+    },
+    {
+      "name": "User Banned",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "user": "banuser"
+      }
+    },
+    {
+      "name": "Bot Initialization",
+      "perms": [],
+      "actions": [
+        {
+          "name": "activity",
+          "category": "Bot Action",
+          "type": "Set Bot Activity",
+          "messageActionRows": [],
+          "activityname": "your concerns!",
+          "activitytype": "LISTENING",
+          "streamurl": ""
+        }
+      ],
+      "var": {}
+    },
+    {
+      "name": "Channel Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "createdchannel"
+      }
+    },
+    {
+      "name": "Channel Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "deletedchannel"
+      }
+    },
+    {
+      "name": "Channel Pins Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "updatepinschannel"
+      }
+    },
+    {
+      "name": "Channel Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "updatechannel"
+      }
+    },
+    {
+      "name": "Emoji Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "createdemoji"
+      }
+    },
+    {
+      "name": "Emoji Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "deletedemoji"
+      }
+    },
+    {
+      "name": "Emoji Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "updatedemoji"
+      }
+    },
+    {
+      "name": "Guild Ban Remove",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Member Available",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Member Speaking",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Member Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Unavailable",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Message Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Message Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Role Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Role Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Role Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Typing Start",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "User Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Button Interaction",
+      "perms": [],
+      "actions": [
+        {
+          "name": "ticket buttons check",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "ticket_general": [
+              {
+                "name": "ticket reply",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.buttoninteraction}",
+                "messagetext": "Ticket erfolgreich erstellt."
+              },
+              {
+                "name": "create ticket",
+                "category": "Channel Action",
+                "type": "Create Channel",
+                "messageActionRows": [],
+                "channelname": "『📇』・${tempVars.buttoninteraction.member.displayName}",
+                "chancategory": "949434151440875570",
+                "reason": "Ticket wurde erstellt.",
+                "channeltype": "Text",
+                "savetovariable": "new_ticket_channel",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "2 sec",
+                "category": "Control",
+                "type": "Wait",
+                "messageActionRows": [],
+                "waitduration": "1",
+                "unit": "seconds"
+              },
+              {
+                "name": "make channel private",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.new_ticket_channel.id}",
+                "permid": "933419198632312843",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Deny"
+              },
+              {
+                "name": "add creator",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.new_ticket_channel.id}",
+                "permid": "${tempVars.buttoninteraction.member.id}",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Allow"
+              },
+              {
+                "name": "ticket open embed",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [
+                  {
+                    "rowtype": "button",
+                    "buttons": [
+                      {
+                        "label": "Ticket schließen",
+                        "customid": "close_ticket",
+                        "style": "DANGER",
+                        "emoji": "🔒",
+                        "URL": "",
+                        "ephemeral": false
+                      },
+                      {
+                        "label": "Ticket archivieren",
+                        "customid": "archive_ticket",
+                        "style": "SECONDARY",
+                        "emoji": "📥",
+                        "URL": "",
+                        "ephemeral": false
+                      }
+                    ]
+                  }
+                ],
+                "channelname": "${tempVars.new_ticket_channel.id}",
+                "color": "0903AD",
+                "title": "Erfolgreich!",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Das Los Santos Police Department Team wurde erfolgreich kontaktiert. Es wird sich zügig um Ihr Anliegen gekümmert.",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Developed by 𝙹𝚊𝚗#0001",
+                "timestamp": "BOOL_TRUE@@",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              }
+            ],
+            "ticket_application": [
+              {
+                "name": "ticket reply_1",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.buttoninteraction}",
+                "messagetext": "Ticket erfolgreich erstellt."
+              },
+              {
+                "name": "create ticket_1",
+                "category": "Channel Action",
+                "type": "Create Channel",
+                "messageActionRows": [],
+                "channelname": "『📋』・${tempVars.buttoninteraction.member.displayName}",
+                "chancategory": "949434151440875570",
+                "reason": "Ticket wurde erstellt.",
+                "channeltype": "Text",
+                "savetovariable": "new_ticket_channel",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "2 sec",
+                "category": "Control",
+                "type": "Wait",
+                "messageActionRows": [],
+                "waitduration": "1",
+                "unit": "seconds"
+              },
+              {
+                "name": "make channel private",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.new_ticket_channel.id}",
+                "permid": "933419198632312843",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Deny"
+              },
+              {
+                "name": "add creator",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.new_ticket_channel.id}",
+                "permid": "${tempVars.buttoninteraction.member.id}",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Allow"
+              },
+              {
+                "name": "ticket open embed",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [
+                  {
+                    "rowtype": "button",
+                    "buttons": [
+                      {
+                        "label": "Ticket schließen",
+                        "customid": "close_ticket",
+                        "style": "DANGER",
+                        "emoji": "🔒",
+                        "URL": "",
+                        "ephemeral": false
+                      },
+                      {
+                        "label": "Ticket archivieren",
+                        "customid": "archive_ticket",
+                        "style": "SECONDARY",
+                        "emoji": "📥",
+                        "URL": "",
+                        "ephemeral": false
+                      }
+                    ]
+                  }
+                ],
+                "channelname": "${tempVars.new_ticket_channel.id}",
+                "color": "0903AD",
+                "title": "Erfolgreich!",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Das Los Santos Police Department Team wurde erfolgreich kontaktiert. Es wird sich zügig um Ihr Anliegen gekümmert.",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Developed by 𝙹𝚊𝚗#0001",
+                "timestamp": "BOOL_TRUE@@",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              }
+            ],
+            "ticket_appointment": [
+              {
+                "name": "ticket reply_2",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.buttoninteraction}",
+                "messagetext": "Ticket erfolgreich erstellt."
+              },
+              {
+                "name": "create ticket_1_1",
+                "category": "Channel Action",
+                "type": "Create Channel",
+                "messageActionRows": [],
+                "channelname": "『📆』・${tempVars.buttoninteraction.member.displayName}",
+                "chancategory": "949434151440875570",
+                "reason": "Ticket wurde erstellt.",
+                "channeltype": "Text",
+                "savetovariable": "new_ticket_channel",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "2 sec",
+                "category": "Control",
+                "type": "Wait",
+                "messageActionRows": [],
+                "waitduration": "1",
+                "unit": "seconds"
+              },
+              {
+                "name": "make channel private",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.new_ticket_channel.id}",
+                "permid": "933419198632312843",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Deny"
+              },
+              {
+                "name": "add creator",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.new_ticket_channel.id}",
+                "permid": "${tempVars.buttoninteraction.member.id}",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Allow"
+              },
+              {
+                "name": "ticket open embed",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [
+                  {
+                    "rowtype": "button",
+                    "buttons": [
+                      {
+                        "label": "Ticket schließen",
+                        "customid": "close_ticket",
+                        "style": "DANGER",
+                        "emoji": "🔒",
+                        "URL": "",
+                        "ephemeral": false
+                      },
+                      {
+                        "label": "Ticket archivieren",
+                        "customid": "archive_ticket",
+                        "style": "SECONDARY",
+                        "emoji": "📥",
+                        "URL": "",
+                        "ephemeral": false
+                      }
+                    ]
+                  }
+                ],
+                "channelname": "${tempVars.new_ticket_channel.id}",
+                "color": "0903AD",
+                "title": "Erfolgreich!",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Das Los Santos Police Department Team wurde erfolgreich kontaktiert. Es wird sich zügig um Ihr Anliegen gekümmert.",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Developed by 𝙹𝚊𝚗#0001",
+                "timestamp": "BOOL_TRUE@@",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              }
+            ],
+            "ticket_complaint": [
+              {
+                "name": "ticket reply_3",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.buttoninteraction}",
+                "messagetext": "Ticket erfolgreich erstellt."
+              },
+              {
+                "name": "create ticket_1_2",
+                "category": "Channel Action",
+                "type": "Create Channel",
+                "messageActionRows": [],
+                "channelname": "『💢』・${tempVars.buttoninteraction.member.displayName}",
+                "chancategory": "949434151440875570",
+                "reason": "Ticket wurde erstellt.",
+                "channeltype": "Text",
+                "savetovariable": "new_ticket_channel",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "2 sec",
+                "category": "Control",
+                "type": "Wait",
+                "messageActionRows": [],
+                "waitduration": "1",
+                "unit": "seconds"
+              },
+              {
+                "name": "make channel private",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.new_ticket_channel.id}",
+                "permid": "933419198632312843",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Deny"
+              },
+              {
+                "name": "add creator",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.new_ticket_channel.id}",
+                "permid": "${tempVars.buttoninteraction.member.id}",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Allow"
+              },
+              {
+                "name": "ticket open embed",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [
+                  {
+                    "rowtype": "button",
+                    "buttons": [
+                      {
+                        "label": "Ticket schließen",
+                        "customid": "close_ticket",
+                        "style": "DANGER",
+                        "emoji": "🔒",
+                        "URL": "",
+                        "ephemeral": false
+                      },
+                      {
+                        "label": "Ticket archivieren",
+                        "customid": "archive_ticket",
+                        "style": "SECONDARY",
+                        "emoji": "📥",
+                        "URL": "",
+                        "ephemeral": false
+                      }
+                    ]
+                  }
+                ],
+                "channelname": "${tempVars.new_ticket_channel.id}",
+                "color": "0903AD",
+                "title": "Erfolgreich!",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Das Los Santos Police Department Team wurde erfolgreich kontaktiert. Es wird sich zügig um Ihr Anliegen gekümmert.",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Developed by 𝙹𝚊𝚗#0001",
+                "timestamp": "BOOL_TRUE@@",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              }
+            ],
+            "ticket_suggestion": [
+              {
+                "name": "ticket reply_4",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.buttoninteraction}",
+                "messagetext": "Ticket erfolgreich erstellt."
+              },
+              {
+                "name": "create ticket_1_3",
+                "category": "Channel Action",
+                "type": "Create Channel",
+                "messageActionRows": [],
+                "channelname": "『🧮』・${tempVars.buttoninteraction.member.displayName}",
+                "chancategory": "949434151440875570",
+                "reason": "Ticket wurde erstellt.",
+                "channeltype": "Text",
+                "savetovariable": "new_ticket_channel",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "2 sec",
+                "category": "Control",
+                "type": "Wait",
+                "messageActionRows": [],
+                "waitduration": "1",
+                "unit": "seconds"
+              },
+              {
+                "name": "make channel private",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.new_ticket_channel.id}",
+                "permid": "933419198632312843",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Deny"
+              },
+              {
+                "name": "add creator",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.new_ticket_channel.id}",
+                "permid": "${tempVars.buttoninteraction.member.id}",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Allow"
+              },
+              {
+                "name": "ticket open embed",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [
+                  {
+                    "rowtype": "button",
+                    "buttons": [
+                      {
+                        "label": "Ticket schließen",
+                        "customid": "close_ticket",
+                        "style": "DANGER",
+                        "emoji": "🔒",
+                        "URL": "",
+                        "ephemeral": false
+                      },
+                      {
+                        "label": "Ticket archivieren",
+                        "customid": "archive_ticket",
+                        "style": "SECONDARY",
+                        "emoji": "📥",
+                        "URL": "",
+                        "ephemeral": false
+                      }
+                    ]
+                  }
+                ],
+                "channelname": "${tempVars.new_ticket_channel.id}",
+                "color": "0903AD",
+                "title": "Erfolgreich!",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Das Los Santos Police Department Team wurde erfolgreich kontaktiert. Es wird sich zügig um Ihr Anliegen gekümmert.",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Developed by 𝙹𝚊𝚗#0001",
+                "timestamp": "BOOL_TRUE@@",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              }
+            ],
+            "close_ticket": [
+              {
+                "name": "close reply",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.buttoninteraction}",
+                "messagetext": "Das Ticket schließt sich in 5 Sekunden."
+              },
+              {
+                "name": "wait close",
+                "category": "Control",
+                "type": "Wait",
+                "messageActionRows": [],
+                "waitduration": "5",
+                "unit": "seconds"
+              },
+              {
+                "name": "close ticket",
+                "category": "Channel Action",
+                "type": "Delete Channel",
+                "messageActionRows": [],
+                "channelname": "${tempVars.buttoninteraction.channelId}",
+                "reason": "Ticket wurde geschlossen."
+              }
+            ],
+            "archive_ticket": []
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.buttoninteraction.customId}"
+        }
+      ],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Select Interaction",
+      "perms": [],
+      "actions": [
+        {
+          "name": "Button",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "status_online": [
+              {
+                "name": "Status",
+                "category": "Bot Action",
+                "type": "Set Bot Status",
+                "messageActionRows": [],
+                "presencestatus": "online"
+              },
+              {
+                "name": "reply",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}",
+                "messagetext": "Status erfolgreich geändert.\n\nNeuer Status: 🟢 Online"
+              }
+            ],
+            "status_idle": [
+              {
+                "name": "Status_1",
+                "category": "Bot Action",
+                "type": "Set Bot Status",
+                "messageActionRows": [],
+                "presencestatus": "idle"
+              },
+              {
+                "name": "reply_1",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}",
+                "messagetext": "Status erfolgreich geändert.\n\nNeuer Status: 🟡 Idle"
+              }
+            ],
+            "status_dnd": [
+              {
+                "name": "Status_2",
+                "category": "Bot Action",
+                "type": "Set Bot Status",
+                "messageActionRows": [],
+                "presencestatus": "dnd"
+              },
+              {
+                "name": "reply_2",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}",
+                "messagetext": "Status erfolgreich geändert.\n\nNeuer Status: 🔴 Do not Disturb"
+              }
+            ],
+            "status_invisible": [
+              {
+                "name": "Status_3",
+                "category": "Bot Action",
+                "type": "Set Bot Status",
+                "messageActionRows": [],
+                "presencestatus": "invisible"
+              },
+              {
+                "name": "reply_3",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}",
+                "messagetext": "Status erfolgreich geändert.\n\nNeuer Status: ⚫ Invisible"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.selectinteraction.values}"
+        },
+        {
+          "name": "roles",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "rank_recruit": [
+              {
+                "name": "rank remove role",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Recruit",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_1",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank add role",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Recruit"
+              },
+              {
+                "name": "delete reply rank",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "rank_ofcr1": [
+              {
+                "name": "rank remove role_2",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Recruit",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_2",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_2",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_2",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_2",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_2",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_2",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_2",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_1_2",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank add role_1",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer I"
+              },
+              {
+                "name": "delete reply rank",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "rank_ofcr2": [
+              {
+                "name": "rank remove role_3",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Recruit",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_3",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_3",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_3",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_3",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_3",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_3",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_3",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_1_3",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank add role_2",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer II"
+              },
+              {
+                "name": "delete reply rank",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "rank_ofcr3": [
+              {
+                "name": "rank remove role_4",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Recruit",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_4",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_4",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_4",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_4",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_4",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_4",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_4",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_1_4",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank add role_3",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer III"
+              },
+              {
+                "name": "delete reply rank",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "rank_sgt1": [
+              {
+                "name": "rank remove role_5",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Recruit",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_5",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_5",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_5",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_5",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_5",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_5",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_5",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_1_5",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank add role_4",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant I"
+              },
+              {
+                "name": "delete reply rank",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "rank_sgt2": [
+              {
+                "name": "rank remove role_6",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Recruit",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_6",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_6",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_6",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_6",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_6",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_6",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_6",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_1_6",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank add role_5",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant II"
+              },
+              {
+                "name": "delete reply rank",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "rank_det1": [
+              {
+                "name": "rank remove role_7",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Recruit",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_7",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_7",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_7",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_7",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_7",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_7",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_7",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_1_7",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank add role_6",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective I"
+              },
+              {
+                "name": "delete reply rank",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "rank_det2": [
+              {
+                "name": "rank remove role_8",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Recruit",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_8",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_8",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_8",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_8",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_8",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_8",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_8",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_1_8",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank add role_7",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective II"
+              },
+              {
+                "name": "delete reply rank",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "rank_det3": [
+              {
+                "name": "rank remove role_9",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Recruit",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_9",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_9",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_9",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Officer III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_9",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_9",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Sergeant II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_9",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective I",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_9",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective II",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank remove role_1_1_1_1_1_1_1_1_9",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective III",
+                "reason": "Rollenverteilung wurde verwendet."
+              },
+              {
+                "name": "rank add role_8",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "Detective III"
+              },
+              {
+                "name": "delete reply rank",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "edu_lead": [
+              {
+                "name": "edu add role",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "LEAD"
+              },
+              {
+                "name": "del reply edu",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "edu_tac": [
+              {
+                "name": "edu add role_1",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "TAC"
+              },
+              {
+                "name": "del reply edu",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "edu_int": [
+              {
+                "name": "edu add role_2",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "INT"
+              },
+              {
+                "name": "del reply edu",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "edu_det": [
+              {
+                "name": "edu add role_3",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "DET"
+              },
+              {
+                "name": "del reply edu",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "edu_speed": [
+              {
+                "name": "edu add role_4",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "SPEED"
+              },
+              {
+                "name": "del reply edu",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "edu_can": [
+              {
+                "name": "edu add role_5",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "CAN"
+              },
+              {
+                "name": "del reply edu",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "edu_asd": [
+              {
+                "name": "edu add role_6",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "ASD"
+              },
+              {
+                "name": "del reply edu",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "edu_wbor": [
+              {
+                "name": "edu add role_7",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "WBOR"
+              },
+              {
+                "name": "del reply edu",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "edu_abor": [
+              {
+                "name": "edu add role_8",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "ABOR"
+              },
+              {
+                "name": "del reply edu",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "edu_el": [
+              {
+                "name": "edu add role_9",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "EL"
+              },
+              {
+                "name": "del reply edu",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "edu_vf": [
+              {
+                "name": "edu add role_10",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "VF"
+              },
+              {
+                "name": "del reply edu",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "edu_media": [
+              {
+                "name": "edu add role_11",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.selectinteraction.member.id}",
+                "rolename": "MEDIA"
+              },
+              {
+                "name": "del reply edu",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.selectinteraction.values}"
+        }
+      ],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Command Interaction",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    }
+  ]
+}
