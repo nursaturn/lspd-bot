@@ -1,0 +1,83 @@
+[{
+  "bot_status_embed": "1"
+},{
+  "channelId": "2",
+  "guildId": "3",
+  "deleted": false,
+  "id": "4",
+  "type": "5",
+  "system": false,
+  "content": "6",
+  "authorId": "7",
+  "pinned": false,
+  "tts": false,
+  "nonce": null,
+  "embeds": "8",
+  "components": "9",
+  "attachments": "10",
+  "stickers": "11",
+  "createdTimestamp": 1653501122675,
+  "editedTimestamp": null,
+  "webhookId": null,
+  "groupActivityApplicationId": null,
+  "applicationId": null,
+  "activity": null,
+  "flags": 0,
+  "reference": null,
+  "interaction": null,
+  "cleanContent": "6"
+},"979071846920093757","933419198632312843","979079413838782475","DEFAULT","","816693702411157545",[
+  "12"
+],[
+  "13"
+],[],[],{
+  "type": "14",
+  "title": "15",
+  "description": "16",
+  "url": null,
+  "color": 590765,
+  "timestamp": null,
+  "fields": "17",
+  "thumbnail": null,
+  "image": null,
+  "video": null,
+  "provider": null
+},{
+  "type": "18",
+  "components": "19"
+},"rich","📟 Bot Status Panel","Klicke auf den jeweiligen Button, um den Status des Bots zu ändern.",[],"ACTION_ROW",[
+  "20"
+],{
+  "type": "21",
+  "customId": "22",
+  "placeholder": "23",
+  "minValues": 1,
+  "maxValues": 1,
+  "options": "24",
+  "disabled": false
+},"SELECT_MENU","bot_status","Bot Status",[
+  "25",
+  "26",
+  "27",
+  "28"
+],{
+  "label": "29",
+  "value": "30",
+  "description": null,
+  "default": false
+},{
+  "label": "31",
+  "value": "32",
+  "description": null,
+  "default": false
+},{
+  "label": "33",
+  "value": "34",
+  "description": null,
+  "default": false
+},{
+  "label": "35",
+  "value": "36",
+  "description": null,
+  "default": false
+},"Online","status_online","Idle","status_idle","Do not Disturb","status_dnd","Invisible","status_invisible"]
